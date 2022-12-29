@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/design_default_color_on_primary">
+
+            <TextView
+                android:layout_width="251dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textview_fullname"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/image_profile"
+                android:text="@string/profile"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+    </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/design_default_color_on_primary"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/image_profile"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_profile" />
+
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cam"
+            />
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_textname"
+                android:hint="@string/firstname"
+                 android:layout_marginBottom="10dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_person"
+                    android:drawablePadding="10dp"
+                    android:text="Firstname"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_textname"
+                android:hint="@string/lastname"
+                android:layout_marginBottom="10dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_person"
+                    android:drawablePadding="10dp"
+                    android:text="Lastname"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_textname"
+                android:hint="@string/phone_no"
+                android:layout_marginBottom="10dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_phonee"
+                    android:drawablePadding="10dp"
+                    android:text="Phone"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_textname"
+                android:hint="@string/password"
+                android:layout_marginBottom="10dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="389dp"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_pass"
+                    android:drawablePadding="10dp"
+                    android:text="Password" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/submit"
+                />
+
+            <Button
+                android:layout_margin="30dp"
+                android:id="@id/btn_logout"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@android:color/holo_red_dark"
+                android:textColor="@color/white"
+                android:text="@string/logout" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
